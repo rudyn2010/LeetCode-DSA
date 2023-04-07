@@ -3,9 +3,6 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        k = k % len(nums)
-        i = 0
-        while i < k:
-            temp = nums.pop()
-            nums.insert(0, temp)
-            i += 1
+        n = len(nums)
+        k = k % n
+        nums[:] = nums[n-k:] + nums[:n-k]
