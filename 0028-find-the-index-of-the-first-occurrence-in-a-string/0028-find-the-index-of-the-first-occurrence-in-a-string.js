@@ -7,20 +7,17 @@ var strStr = function(haystack, needle) {
     
     if (haystack === "") {
         return -1 
-    }
+    };
     
     let start = 0;
-    //let end = needle.length;
     
     while (start < haystack.length) {
-    //while ((haystack.length - start) >= needle.length - 1) {
         let word = haystack.slice(start, (start + needle.length));
         if (word === needle) {
-            return start;
+            return start
         };
         start += 1
-        //end += 1
-    }
+    };
     return -1
 };
 
