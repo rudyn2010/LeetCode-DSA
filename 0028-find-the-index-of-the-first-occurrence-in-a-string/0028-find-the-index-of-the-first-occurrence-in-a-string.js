@@ -12,14 +12,14 @@ var strStr = function(haystack, needle) {
     let start = 0;
     let end = needle.length
     
-    //while (start < haystack.length) {
-    while ((haystack.length - start) >= needle.length - 1) {
-        let word = haystack.slice(start, end);
+    while (start < haystack.length) {
+    //while ((haystack.length - start) >= needle.length - 1) {
+        let word = haystack.slice(start, start + end);
         if (word === needle) {
             return start
         };
         start += 1
-        end += 1
+        //end += 1
     };
     return -1
 };
