@@ -6,7 +6,7 @@
 var strStr = function(haystack, needle) {
     
     if (haystack === "") {
-        return -1 
+        return 0 
     };
     
     let start = 0;
