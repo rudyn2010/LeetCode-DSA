@@ -9,9 +9,10 @@ class Solution(object):
         res = []
         nums.sort()
         
+        #We want to use each value from input array as a possible first value when checking triplets. Enumerate function adds a counter to an iterable (in this case an input array).
         for i, a in enumerate(nums):
             
-            #Check to see if val is not 1st in input array and not the same as previous val
+            #Check whether or not the same value is used in same position twice
             if i > 0 and a == nums[i - 1]:
                 continue
                 
