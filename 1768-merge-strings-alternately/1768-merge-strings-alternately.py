@@ -1,6 +1,11 @@
-class Solution:
-    def mergeAlternately(self, word1: str, word2: str) -> str:
-        i, j = 0, 0
+class Solution(object):
+    def mergeAlternately(self, word1, word2):
+        """
+        :type word1: str
+        :type word2: str
+        :rtype: str
+        """
+        i, j = 0, 0 
         
         res = []
         
@@ -12,4 +17,5 @@ class Solution:
             
         res.append(word1[i:])
         res.append(word2[j:])
+        
         return "".join(res)
