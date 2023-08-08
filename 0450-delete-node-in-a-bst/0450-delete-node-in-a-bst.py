@@ -7,7 +7,7 @@
 class Solution:
     def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
         
-        #base cases
+        #Base cases
         if not root:
             return root
         
