@@ -1,10 +1,10 @@
 /**
  * @return {Function}
  */
-const createHelloWorld = () => {
+const createHelloWorld = function() {
     return function(...args) {
-        return "Hello World"
-    }
+        return "Hello World";
+    };
 }
 /**
  * const f = createHelloWorld();
