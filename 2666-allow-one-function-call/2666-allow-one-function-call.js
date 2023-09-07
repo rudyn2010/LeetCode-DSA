@@ -4,15 +4,15 @@
  */
 var once = function(fn) {
     
-    let called = false;
+    let hasBeenCalled = false;
     
     return function(...args){
         
-        if (called) {
+        if (hasBeenCalled) {
             return undefined;
         };
         
-        called = true;
+        hasBeenCalled = true;
         
         return fn(...args);
     };
